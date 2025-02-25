@@ -1,0 +1,13 @@
+# Ignorar a pasta "env"
+env/
+
+# Ignorar qualquer arquivo ou pasta na raiz que comece com "db"
+/db*
+
+# Ignorar todos os arquivos com extensão .sqlite3 (banco de dados SQLite)
+*.sqlite3
+
+# Ignorar caches do Python
+__pycache__/
+*.pyc
+*.pyo

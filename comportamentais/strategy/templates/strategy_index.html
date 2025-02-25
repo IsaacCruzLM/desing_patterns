@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Strategy Pattern
+{% endblock %}
+
+{% block content %}
+    {% for pedido in pedidos %}
+        <h3>{{pedido.processamento}}</h1>
+        <p>Valor: {{pedido.valor}}</p>
+        <p>Valor do frete: {{pedido.valor_do_frete}}</p>
+        </br>
+    {% endfor %}
+
+{% endblock %}
