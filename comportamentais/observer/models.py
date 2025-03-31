@@ -33,7 +33,7 @@ class Subject(ABC):
 
 class Email():
     @staticmethod
-    def enviar_email(self, observer: Observer, message: str) -> None:
+    def enviar_email(observer: Observer, message: str) -> None:
         print('-----------------------------------------------')
         print('Email enviado para {} - {}'.format(observer.get_nome(), observer.get_email()))
         print('Mesagem: {}'.format(message))
@@ -137,7 +137,7 @@ class Newsletter(Subject):
 
     def notify_observers(self) -> None:
         for observer in self.observers:
-            observer.update(self.observers[-1])
+            observer.update(self.messages[-1])
     
     def add_message(self, message: str) -> None:
         self.messages.append(message)
