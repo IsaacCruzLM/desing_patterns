@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'comportamentais.strategy',
-    'comportamentais.template_method'
+    'comportamentais.template_method',
+    'comportamentais.observer'
 ]
 
 MIDDLEWARE = [
