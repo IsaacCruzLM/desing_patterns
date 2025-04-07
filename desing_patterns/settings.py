@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'comportamentais.strategy',
     'comportamentais.template_method',
-    'comportamentais.observer'
+    'comportamentais.observer',
+    'comportamentais.state'
 ]
 
 MIDDLEWARE = [
