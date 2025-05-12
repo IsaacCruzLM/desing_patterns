@@ -22,5 +22,6 @@ urlpatterns = [
     path("comportamentais/strategy-pattern", include("comportamentais.strategy.urls")),
     path("comportamentais/template-method-pattern", include("comportamentais.template_method.urls")),
     path("comportamentais/observer-pattern", include("comportamentais.observer.urls")),
-    path("comportamentais/state-pattern", include("comportamentais.state.urls"))
+    path("comportamentais/state-pattern", include("comportamentais.state.urls")),
+    path("estruturais/adapter-pattern", include("estruturais.adapter.urls"))
 ]

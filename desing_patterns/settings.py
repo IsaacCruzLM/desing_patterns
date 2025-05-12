@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'comportamentais.strategy',
     'comportamentais.template_method',
     'comportamentais.observer',
-    'comportamentais.state'
+    'comportamentais.state',
+    'estruturais.adapter',
 ]
 
 MIDDLEWARE = [
