@@ -3,21 +3,27 @@ from abc import ABC, abstractmethod
 
 ## Interfaces
 class Gateway(ABC):
+    @abstractmethod
     def set_valor(self, valor: float):
         pass
     
+    @abstractmethod
     def set_parcelas(self, parcelas: int):
         pass
     
+    @abstractmethod
     def set_numero_cartao(self, numero_cartao: str):
         pass
     
+    @abstractmethod
     def set_cvv(self, cvv: str):
         pass
     
+    @abstractmethod
     def validar_cartao(self) -> bool:
         pass
 
+    @abstractmethod
     def realizar_pagamento(self) -> bool:
         pass
 
