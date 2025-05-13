@@ -111,6 +111,7 @@ class TopPagamentosAdapter(Gateway):
     def realizar_pagamento(self) -> bool:
         return self.TopPagamentos.realizar_pagamento()
 
+# Classe de Cobrança de contexto Geral que consome os Adpters
 class Cobranca():
     def __init__(self, gateway: Gateway):
         self.Gateway = gateway
